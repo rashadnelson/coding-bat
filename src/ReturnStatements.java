@@ -5,12 +5,14 @@ public class ReturnStatements {
 
     }
 
+    // CODING BAT - 5/21/22
+
 }
 
     /*
-    CODING BAT - 5/19/22
-
     METHOD CALLS
+
+    CODING BAT - 5/19/22
     String strValue1 = nonStart("Hello", "There");
     System.out.println(strValue1);
 
@@ -20,7 +22,26 @@ public class ReturnStatements {
     String strValue3 = right2("Hello");
     System.out.println(strValue3);
 
+    CODING BAT - 5/20/22
+    String capture = theEnd("Hello", false);
+    System.out.println(capture);
+
+    String doWithoutEnd2 = withoutEnd2("");
+    System.out.println(doWithoutEnd2);
+
+    String doMiddleTwo = middleTwo("Practice");
+    System.out.println(doMiddleTwo);
+
+    CODING BAT - 5/21/22
+
+
+    */
+
+
+/*
     METHODS
+
+    CODING BAT - 5/19/22
     public static String nonStart(String a, String b) {
 
         int aLength = a.length();
@@ -53,6 +74,43 @@ public class ReturnStatements {
         return last2Chars + firstChars;
 
     }
+
+    CODING BAT - 5/20/22
+    public static String theEnd(String str, boolean front) {
+
+        int cut = str.length() - 1;
+
+        if ( front == false) {
+            return str.substring(cut);
+        }
+
+        return str.substring(0, 1);
+    }
+
+    public static String withoutEnd2(String str) {
+
+        int cut = str.length() - 1;
+
+        if (str.length() <= 1) {
+            return "";
+        }
+
+        return str.substring(1, cut);
+
+    }
+
+    public static String middleTwo(String str) {
+
+        int secondChar = (str.length() / 2) + 1;
+        int firstChar = (str.length() / 2) - 1;
+
+        return str.substring(firstChar, secondChar);
+
+    }
+
+    CODING BAT - 5/21/22
+
+
 
      */
 
