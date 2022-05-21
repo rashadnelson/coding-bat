@@ -2,10 +2,22 @@ public class ReturnStatements {
 
     public static void main(String[] args) {
 
+        String toTwoChar = twoChar("Hello", 1);
+        System.out.println(toTwoChar);
 
     }
 
     // CODING BAT - 5/21/22
+    public static String twoChar(String str, int index) {
+
+        if ( index <= 2 ) {
+
+            return str.substring(index, index + 2);
+
+        }
+
+        return str.substring(0, 2);
+    }
 
 }
 
@@ -33,6 +45,11 @@ public class ReturnStatements {
     System.out.println(doMiddleTwo);
 
     CODING BAT - 5/21/22
+    boolean toEndsLy = endsLy("oddy");
+    System.out.println(toEndsLy);
+
+    String toNTwice = nTwice("a", 1);
+    System.out.println(toNTwice);
 
 
     */
@@ -109,13 +126,38 @@ public class ReturnStatements {
     }
 
     CODING BAT - 5/21/22
+    public static boolean endsLy(String str) {
 
+        if ( str.length() >= 2 ) {
 
+            int cut = str.length() - 2;
+
+            String ly = str.substring(cut);
+
+            if ( ly.equals("ly") ) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static String nTwice(String str, int n) {
+
+        if ( str.length() >= n ) {
+            int cut = str.length() - n;
+
+            String front = str.substring(0, n);
+            String back = str.substring(cut);
+
+            return front + back;
+        }
+
+        return str;
+    }
 
      */
-
-
-
 
     /*
 
