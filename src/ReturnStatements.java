@@ -2,21 +2,20 @@ public class ReturnStatements {
 
     public static void main(String[] args) {
 
-        String toTwoChar = twoChar("Hello", 1);
-        System.out.println(toTwoChar);
+        String toFrontAgain = frontAgain("edit");
+
+        System.out.println(toFrontAgain);
 
     }
 
     // CODING BAT - 5/21/22
-    public static String twoChar(String str, int index) {
+    public static String frontAgain(String str) {
 
-        if ( index <= 2 ) {
+        String firstTwo = str.substring(0, 2);
 
-            return str.substring(index, index + 2);
+        String lastTwo = str.substring(str.length() - 2, str.length() );
 
-        }
-
-        return str.substring(0, 2);
+        return firstTwo + lastTwo;
     }
 
 }
