@@ -2,20 +2,21 @@ public class ReturnStatements {
 
     public static void main(String[] args) {
 
-        String toFrontAgain = frontAgain("edit");
-
-        System.out.println(toFrontAgain);
+        int toFirstLast6[] = firstLast6();
+        System.out.println(toFirstLast6);
 
     }
 
-    // CODING BAT - 5/21/22
-    public static String frontAgain(String str) {
+    // CODING BAT - 5/30/22
+    public static int firstLast6(int[] nums) {
 
-        String firstTwo = str.substring(0, 2);
+        if ( nums[0] == 6 || nums[nums.length - 1] == 6 ) {
 
-        String lastTwo = str.substring(str.length() - 2, str.length() );
+            return true;
 
-        return firstTwo + lastTwo;
+        }
+
+        return false;
     }
 
 }
