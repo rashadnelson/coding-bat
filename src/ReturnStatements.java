@@ -2,13 +2,15 @@ public class ReturnStatements {
 
     public static void main(String[] args) {
 
-        int toFirstLast6[] = firstLast6();
+        // Method call
+        boolean toFirstLast6 = firstLast6(new int[] {1, 2, 6});
+
+        // Print out statement outputing true or false
         System.out.println(toFirstLast6);
 
     }
 
-    // CODING BAT - 5/30/22
-    public static int firstLast6(int[] nums) {
+    public static boolean firstLast6(int[] nums) {
 
         if ( nums[0] == 6 || nums[nums.length - 1] == 6 ) {
 
