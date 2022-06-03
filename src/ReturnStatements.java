@@ -12,7 +12,7 @@ public class ReturnStatements {
 
     public static boolean firstLast6(int[] nums) {
 
-        if ( nums[0] == 6 || nums[nums.length - 1] == 8 ) {
+        if ( nums[0] == 6 || nums[nums.length - 1] == 9 ) {
 
             return true;
 
