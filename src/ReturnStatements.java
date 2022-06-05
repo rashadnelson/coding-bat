@@ -3,22 +3,24 @@ public class ReturnStatements {
     public static void main(String[] args) {
 
         // Method call
-        boolean toFirstLast6 = firstLast6(new int[] {1, 2, 6});
 
-        // Print out statement outputing true or false
-        System.out.println(toFirstLast6);
+        // Print out statement
+        System.out.println(makeLast(new int[]{4, 5, 7}));
 
     }
 
-    public static boolean firstLast6(int[] nums) {
+    public static int[] makeLast(int[] nums) {
 
-        if ( nums[0] == 6 || nums[nums.length - 1] == 9 ) {
+        int doubleArrayLength = nums.length * 2;
 
-            return true;
+        int[] newArray = new int[doubleArrayLength];
 
+        for (int i = 0; (i < doubleArrayLength - 1); i++) {
+
+            newArray[i] = 0;
         }
 
-        return false;
+        return newArray;
     }
 
 }
