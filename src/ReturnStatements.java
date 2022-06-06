@@ -5,7 +5,7 @@ public class ReturnStatements {
         // Method call
 
         // Print out statement
-        System.out.println(makeLast(new int[]{4, 5, 7}));
+        System.out.println(makeLast(new int[]{4, 5, 8}));
 
     }
 
