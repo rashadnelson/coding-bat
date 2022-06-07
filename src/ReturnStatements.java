@@ -5,10 +5,13 @@ public class ReturnStatements {
         // Method call
 
         // Print out statement
-        System.out.println(makeLast(new int[]{4, 5, 8}));
+        //System.out.println(makeLast(new int[]{4, 5, 8}));
+
+        System.out.println(5/2);
 
     }
 
+    /*
     public static int[] makeLast(int[] nums) {
 
         int doubleArrayLength = nums.length * 2;
@@ -22,6 +25,7 @@ public class ReturnStatements {
 
         return newArray;
     }
+    */
 
 }
 
