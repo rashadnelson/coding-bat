@@ -7,7 +7,7 @@ public class ReturnStatements {
         // Print out statement
         //System.out.println(makeLast(new int[]{4, 5, 8}));
 
-        System.out.println(18/5);
+        System.out.println(19/5);
 
     }
 
